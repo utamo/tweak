@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+@font-face {
+    font-family: 'Paladins';
+    src: url("BulletproofBB.ttf");
+    
+}
+.body {
+   color: red;
+}
+
+.grid-container {
+    
+    background-image: url(pala.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    color: #0f4048;
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+        "header header header"
+        "midct midct midct"
+        "footer footer footer"
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: header;
+    justify-content: center;
+    
+    margin: 1rem;
+}
+.logo {
+    padding: 2ch;
+    width: 30ch;
+}
+.mdct {
+    grid-area: midct;
+
+    font-size: .6rem;
+    display: grid;
+    grid-template-rows: .07fr;
+    grid-template-areas: 
+    "button1"
+}
+.buttons {
+    grid-area: button1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #242424;
+    opacity: 0.8;
+}
+.button1 {
+    margin: .5rem 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow:         1px 1px 1px 1px #c4975a;
+    align-items: center;
+    background-color: rgba(239, 190, 112, 0.85);
+    padding: .2rem 1rem;
+;
+    
+}
+
+.right {
+    
+    display: flex;
+}
+.button1 h1, h2 {
+    padding: 0 .5rem;
+}
+.fa:hover {
+    color: #4d2222;
+    transform: scale( 1.02);
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: .6rem;
+}
+
